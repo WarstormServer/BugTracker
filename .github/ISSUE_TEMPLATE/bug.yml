@@ -1,0 +1,72 @@
+name: Bug report
+description: Use this form to report a bug — the fields help us triage faster.
+title: '[BUG] ' 
+labels: ['bug', 'needs triage'] 
+assignees: [] 
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve the project! Please fill in the fields below — required fields are marked.
+
+  - type: textarea
+    id: current_behavior
+    attributes:
+      label: Current Behaviour
+      description: Describe the problem or issue here. Include which creatures/items/quests/spells etc. are affected.
+      placeholder: "Describe what is happening now..."
+      required: true
+
+  - type: textarea
+    id: expected_behavior
+    attributes:
+      label: Expected Behaviour
+      description: Tell us what should happen instead.
+      placeholder: "Describe the expected behaviour..."
+      required: true
+
+  - type: input
+    id: source
+    attributes:
+      label: Source (optional)
+      description: If you have a source (video, patch notes, wiki) that shows how it should work, paste a link or brief citation.
+      placeholder: "URL or description (optional)"
+      required: false
+
+  - type: textarea
+    id: steps_to_reproduce
+    attributes:
+      label: Steps to reproduce the problem
+      description: Step-by-step instructions someone else can follow to reproduce the bug.
+      placeholder: "1. Do this\n2. Do that\n3. Observe..."
+      required: true
+
+  - type: textarea
+    id: extra_notes
+    attributes:
+      label: Extra Notes
+      description: Any other information that may help (logs, environment, platform, screenshots).
+      placeholder: "Optional extra notes..."
+      required: false
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform (optional)
+      description: Select the platform where the bug occurred
+      options:
+        - Web
+        - Windows
+        - macOS
+        - Linux
+        - Android
+        - iOS
+        - Other
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        ----
+        Thank you — once you submit this issue maintainers will triage and reply.
