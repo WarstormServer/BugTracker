@@ -54,15 +54,6 @@ body:
         None
     validations:
       required: false
-  - type: input
-    id: os
-    attributes:
-      label: Operating system
-      description: |
-        The Operating System the Server is running on.
-        i.e. Windows 11 x64, Debian 10 x64, macOS 12, Ubuntu 20.04
-    validations:
-      required: true
   - type: markdown
     attributes:
       value: |
