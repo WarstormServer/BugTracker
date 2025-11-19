@@ -1,54 +1,69 @@
-name: Bug report
-description: Use this form to report a bug.
-title: "[BUG] "
-labels: ["bug"]
-
+name: Game issues
+description: Create a bug report to help us improve.
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for reporting a bug! Please fill in the required fields below.
-
+        Thank you for taking the time to fill out a bug report. Remember to fill out all fields including the title above. 
+        An issue that is not properly filled out will be closed. 
   - type: textarea
-    id: current_behavior
+    id: current
     attributes:
       label: Current Behaviour
-      description: Describe the problem or issue here.
-      placeholder: "Describe what is happening now..."
+      description: |
+        Description of the problem or issue here.
+        Include entries of affected creatures / items / quests / spells etc.
+        Never upload files! Use GIST for text and YouTube for videos!
+    validations:
       required: true
-
   - type: textarea
-    id: expected_behavior
+    id: expected
     attributes:
       label: Expected Behaviour
-      description: Tell us what should happen instead.
-      placeholder: "Describe the expected behaviour..."
+      description: |
+        Tell us what should happen instead.
+    validations:
       required: true
-
-  - type: input
+  - type: textarea
     id: source
     attributes:
-      label: Source (optional)
-      description: If you have a source, add a link.
-      placeholder: "URL or description"
+      label: Source
+      description: |
+        If you have a source that proves how it is supposed to work, please add that to make it easier for devs to fix the issue.
     validations:
       required: false
-
   - type: textarea
-    id: steps_to_reproduce
+    id: reproduce
     attributes:
-      label: Steps to reproduce
-      description: Explain how to reproduce the issue.
+      label: Steps to reproduce the problem
+      description: |
+        What does someone else need to do to encounter the same bug?
       placeholder: |
-        1. ...
-        2. ...
-        3. ...
+        1. Step 1
+        2. Step 2
+        3. Step 3
+    validations:
       required: true
-
   - type: textarea
-    id: extra_notes
+    id: extra
     attributes:
       label: Extra Notes
-      description: Anything else that may help.
-      placeholder: "Optional notes..."
+      description: |
+        Do you have any extra notes that can help solve the issue that does not fit any other field?
+      placeholder: |
+        None
+    validations:
       required: false
+  - type: input
+    id: os
+    attributes:
+      label: Operating system
+      description: |
+        The Operating System the Server is running on.
+        i.e. Windows 11 x64, Debian 10 x64, macOS 12, Ubuntu 20.04
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for your contribution.
