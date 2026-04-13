@@ -5,7 +5,7 @@ body:
     id: realm
     attributes:
       label: Realm / Environment
-      description: Please select which version of the game you are playing on.
+      description: Where did you encounter this issue? (Live or PTR)
       options:
         - Live
         - Public Test Realm (PTR)
