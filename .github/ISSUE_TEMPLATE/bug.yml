@@ -1,6 +1,16 @@
 name: Game issues
 description: Create a bug report to help us improve.
 body:
+  - type: dropdown
+    id: realm
+    attributes:
+      label: Realm / Environment
+      description: Please select which version of the game you are playing on.
+      options:
+        - Live
+        - Public Test Realm (PTR)
+    validations:
+      required: true
   - type: markdown
     attributes:
       value: |
